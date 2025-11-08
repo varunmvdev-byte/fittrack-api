@@ -15,9 +15,9 @@ import (
 func main() {
 	_ = godotenv.Load() // load .env if present
 
-	if os.Getenv("GIN_MODE") == "release" {
-		gin.SetMode(gin.ReleaseMode)
-	}
+	// if os.Getenv("GIN_MODE") == "release" {
+	// 	gin.SetMode(gin.ReleaseMode)
+	// }
 
 	db, err := database.Connect()
 	if err != nil {
